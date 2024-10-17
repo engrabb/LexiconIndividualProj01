@@ -28,8 +28,11 @@ Kopiera kod
 5. Exit
 
 Select an option
+
 Enter task description
 
 Task added successfully!
+
 Contributing
+
 If you'd like to contribute to the project, feel free to fork the repository and submit a pull request. Contributions are always welcome!
