@@ -19,20 +19,22 @@ namespace LexiconIndividualProj01
         {
             bool running = true;
             Console.WriteLine("This is your todo list!");
-            Console.WriteLine("You have {} tasks to do and {} tasks completed");
+            
             while (running)
             {
-                Console.WriteLine("1. Show tasks.");
-                Console.WriteLine("2. Add a new task");
-                Console.WriteLine("3. Edit a task, mark as complete or delete");
-                Console.WriteLine("4. Save and exit program");
+                Console.WriteLine("1. Show tasks sorted by date.");
+                Console.WriteLine("2. Show tasks sorted by project.");
+                Console.WriteLine("3. Add a new task");
+                Console.WriteLine("4. Edit a task, mark as complete or delete");
+                Console.WriteLine("5. Save and exit program");
                 char choice = char.Parse(Console.ReadLine());
                 switch (choice)
                 {
-                    case '1': taskHandler.ShowTasks(); break;
-                    case '2': AddTaskToList(); break;
-                    case '3': EditTaskInList(); break;
-                    case '4': SaveTaskList();
+                    case '1': taskHandler.SortByDate(); break;
+                    case '2': taskHandler.SortByProject(); break;
+                    case '3': AddTaskToList(); break;
+                    case '4': EditTaskInList(); break;
+                    case '5': SaveTaskList();
                         running = false;
                         break;
                         default: Console.WriteLine("Can't do that..");
