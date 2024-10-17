@@ -20,7 +20,7 @@ Complete Task: Mark a task as completed.
 Delete Task: Remove a task from the list.
 
 
-Kopiera kod
+
 1. Add Task
 2. View Tasks
 3. Complete Task
